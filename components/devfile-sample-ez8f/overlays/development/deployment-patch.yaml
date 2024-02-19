@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ez8f
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0065-tenant/tkrw-pr712-0075-0065-app/devfile-sample-ez8f@sha256:452eb75c70c4f208a6b707e139bf9eeae2948dc18cb64c0ee17aefee38fe1443
+        name: my-nodejs
+        resources: {}
+status: {}
